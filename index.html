@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Solar E-Bike Sharing Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">SMART MOBILITY</p>
+      <h1>Solar E-Bike Network</h1>
+      <p class="subtitle">Conceptual offline prototype for sustainable campus mobility</p>
+    </div>
+    <div class="status-pill"><span></span> System Online</div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">PROJECT PROTOTYPE</p>
+        <h2>Clean energy. Smart tracking. Shared mobility.</h2>
+        <p>
+          A conceptual dashboard for monitoring solar-powered shared e-bikes,
+          battery status, locations and ride activity.
+        </p>
+      </div>
+      <div class="solar-box">
+        <div class="sun">☀</div>
+        <strong id="solarPower">2.4 kW</strong>
+        <small>Solar generation</small>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="card stat">
+        <span>Available Bikes</span>
+        <strong id="availableBikes">8</strong>
+      </div>
+      <div class="card stat">
+        <span>Active Rides</span>
+        <strong id="activeRides">2</strong>
+      </div>
+      <div class="card stat">
+        <span>Dock Battery</span>
+        <strong id="dockBattery">84%</strong>
+      </div>
+      <div class="card stat">
+        <span>CO₂ Saved</span>
+        <strong id="co2Saved">12.6 kg</strong>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <div class="section-title">
+          <h3>Bike Status</h3>
+          <button id="refreshBtn">Refresh</button>
+        </div>
+        <div id="bikeList" class="bike-list"></div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">
+          <h3>Ride Simulator</h3>
+          <span id="rideStatus" class="tag">Not started</span>
+        </div>
+        <p id="rideInfo">Select a bike and start a simulated ride.</p>
+        <div class="ride-actions">
+          <select id="bikeSelect"></select>
+          <button id="startRide">Start Ride</button>
+          <button id="endRide" class="secondary" disabled>End Ride</button>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress"><div id="rideProgress"></div></div>
+          <small id="rideTimer">00:00</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title">
+        <h3>Charging Stations</h3>
+        <span class="tag green">Solar powered</span>
+      </div>
+      <div class="station-grid">
+        <div class="station"><strong>Station A</strong><span>Campus Main Gate</span><b>92%</b></div>
+        <div class="station"><strong>Station B</strong><span>ECE Block</span><b>78%</b></div>
+        <div class="station"><strong>Station C</strong><span>Hostel Zone</span><b>81%</b></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Student engineering project • Conceptual prototype • No real-time hardware connection</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
