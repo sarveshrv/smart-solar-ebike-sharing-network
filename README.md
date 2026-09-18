@@ -49,6 +49,18 @@ Currently in the development and prototyping stage. The project does not yet hav
 
 The project aims to explore how renewable energy and smart technology can be combined to support sustainable campus and urban mobility.
 
+## Project Visualization
+
+An AI-generated conceptual visualization of the proposed
+Smart Solar-Powered E-Bike Sharing Network.
+
+[View Project Visualization](visualizations/smart-solar-ebike-concept.mp4)
+
+> Note: This video is an AI-generated conceptual visualization
+> and does not represent a deployed or physically working system.
+>
+
 ## Author
 
 Student Engineering Project
+
